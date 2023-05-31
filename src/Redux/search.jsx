@@ -13,13 +13,13 @@ const searchSlice = createSlice({
    initialState,
    reducers:{
       searchMovies:(state) =>{
-         console.log(state);
+         // console.log(state);
          return {
             ...state, isFetching:true
          }
       },
       fetchedSearchMovies:(state, action)=>{
-         console.log(action);
+         // console.log(action);
          return {
             ...state, isFetching:false,
             results: action.payload.results,

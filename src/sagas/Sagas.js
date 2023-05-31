@@ -12,7 +12,7 @@ function* fetchGenres(){
    yield put(fetchedGenres( yield call(api.getGenres)))
 }
 function* fetchSearchMovies(action){
-  yield console.log(action);
+//   yield console.log(action);
    yield delay(500);
 
    yield put(
